@@ -35,7 +35,7 @@ setuptools.setup(
         "Source": "https://github.com/Legend-Mukund/MUKUNDX"
     },
     python_requires=">=3.6",
-    py_modules=['py_bmi'],
+    py_modules=['MUKUNDX'],
     packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=requirements()
