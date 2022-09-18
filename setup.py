@@ -1,7 +1,6 @@
 import os
 import setuptools
 
-
 def requirements(file="requirements.txt"):
     if os.path.isfile(file):
         with open(file, encoding="utf-8") as r:
@@ -17,8 +16,8 @@ def readme(file="README.md"):
         return ""
 
 setuptools.setup(
-    name="MUKUNDX",
-    version="0.0.2",
+    name="MukundxD",
+    version="0.0.1",
     description="A Simple Python module to do many things if need support then join @META_CHATS | or contact @LEGEND_MUKUND",
     long_description=readme(),
     long_description_content_type="text/markdown",
@@ -35,7 +34,7 @@ setuptools.setup(
         "Source": "https://github.com/Legend-Mukund/MUKUNDX"
     },
     python_requires=">=3.6",
-    py_modules=['MUKUNDX'],
+    py_modules=['MukundxD'],
     packages=setuptools.find_packages(),
     zip_safe=False,
     install_requires=requirements()
