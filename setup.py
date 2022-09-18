@@ -18,7 +18,7 @@ def readme(file="README.md"):
 
 setuptools.setup(
     name="MUKUNDX",
-    version="0.0.1",
+    version="0.0.2",
     description="A Simple Python module to do many things if need support then join @META_CHATS | or contact @LEGEND_MUKUND",
     long_description=readme(),
     long_description_content_type="text/markdown",
