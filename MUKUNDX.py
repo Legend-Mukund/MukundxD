@@ -24,15 +24,12 @@ SOFTWARE.
 
 import requests 
 
-API = "https://apis.xditya.me"
-
-def search(text):
-        r = requests.get(API + f"/lyrics?song={text}")
-        find = r.json()
-        return find
+API = "https://apis.xditya.me/lyrics?song=blinding+lights"
        
-def lyrics(text):
+def lyrics(text, text1):
         xD = search(text)
-        lyric = f'**🎶 Successfully Extracted Lyrics Of {text} 🎶**\n\n\n\n'
-        lyric += f'`{xD["lyrics"]}`'
-        return text
+        r = requests.get(API + f"{text}+{text1}")
+        lyric = f'**🎶 Successfully Extracted Lyrics Of {text} {text1} 🎶**\n\n\n\n'
+        find = r.json()
+        lyric += f'`{find}`'
+        return lyric
